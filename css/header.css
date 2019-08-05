@@ -1,7 +1,6 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 
-
 .logo-title{
 
 font-family: 'Satisfy', cursive;
@@ -19,7 +18,7 @@ margin: 10px 10px 0px 10px;
     }
 
 
-    .SignIn,.SignUp {
+    .signInFirst,.signUpFirst {
         width: 90px;
         padding: 10px;
         cursor: pointer;
@@ -112,6 +111,46 @@ margin: 10px 10px 0px 10px;
         color: black;
         text-decoration: none;
         cursor: pointer;
+      }
+
+      hr{
+          border-width: 0.5px;
+          border-style: solid;
+          color: gray;
+          margin-bottom: 25px;
+
+      }
+
+      .fullName,.userName,.password,.confirmPassword{
+        
+          font-weight: bold;
+          font-size: 17px;
+          font-family: 'Calibri';
+          display:inline;   
+      }
+
+      
+      .inputFullName,.inputUserName,.inputPassword,.inputConfirmPassword{
+          width: 95%;
+          height:6%;   
+          padding: 8px; 
+          background:rgb(232,232,232);
+          border: none;   
+          margin-bottom: 20px;  
+      }
+
+      .signUpModal{
+          width:99%;
+          height:8%;
+          display: flex;
+          justify-content: center;
+          background: #009933;
+          padding:12px;
+          color: #fff;
+          border:none;
+          margin-top: 5px;
+
+
       }
       
        

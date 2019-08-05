@@ -20,8 +20,8 @@
         <div class="header">
 
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-            <input class="SignUp" type="button" value="Sign Up" class="SignUp" id="SignUp">
-            <input class="SignIn" type="button" value="Sign In" class="SignIn">
+            <input class="signUpFirst" type="button" value="Sign Up" id="SignUp">
+            <input class="signInFirst" type="button" value="Sign In">
            
             <a id="heading" class="logo-title">ScriBBler</a>
             <p class="sub-heading">Explore. Imagine. Create</p>
@@ -52,7 +52,16 @@
             <div class="SignUp-modal-content">
              <span class="close">&times;</span>
               <p class="heading">Get Started</p>
-              <p>Some text in the Modal..</p>
+              <hr />
+              <p class="fullName">Full Name</p>
+              <input type="text" class="inputFullName" placeholder="Enter Full Name" required/>
+              <p class="userName">UserName</p>
+              <input type="text" class="inputUserName" placeholder="Enter UserName" required/>
+              <p class="password">Password</p>
+              <input type="password" class="inputPassword" placeholder="Enter Password" required/>
+              <p class="confirmPassword">Confirm Password</p>
+              <input type="password" class="inputConfirmPassword" placeholder="Confirm Password" required/>
+              <input type="button" value="Sign Up" class="signUpModal"/>              
             </div>          
 
     </div>
