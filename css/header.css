@@ -1,2 +1,68 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+
+
+.logo-title{
+
+font-family: 'Satisfy', cursive;
+font-size: 50px;
+color: #112fb4;
+margin: auto;
+text-decoration: none;
+margin: 10px 10px 0px 10px;    
+
+}
+
+.sub-heading{
+    font-family: 'Marck Script', cursive;
+    margin: 0 0 0px 10px;
+    }
+
+
+    .SignIn,.SignUp {
+        width: 90px;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 90%;
+        background: #0000ff;
+        color: #fff;
+        float: right;                   
+        margin: 10px 10px 0px 0px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+       .postButtons{
+        display: flex;
+        justify-content: center;
+        margin-top: 160px;
+       }
+
+    #allPosts{
+        width: 90px;
+        padding:10px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 90%;
+        font-weight: bold;
+        background-color: goldenrod;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      
+    }
+
+    #createPosts{
+        width: 110px;
+        padding:10px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 90%;
+        margin-left: 10px;
+        font-weight: bold;
+        color: black;
+        background-color: goldenrod;
+        font-family: Arial, Helvetica, sans-serif;
+      
+    } 
+       
+
