@@ -11,6 +11,8 @@
 	<!-- Place all CSS for fonts in this file -->
     <link href='css\font.css' rel='stylesheet' type='text/css'>
 
+    <title>UpGrad Project</title>
+
 
 
 </head>
@@ -20,8 +22,8 @@
         <div class="header">
 
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-            <input class="signUpFirst" type="button" value="Sign Up" id="SignUp">
-            <input class="signInFirst" type="button" value="Sign In">
+            <input class="signUp" type="button" value="Sign Up" id="SignUp">
+            <input class="signIn" type="button" value="Sign In" id="SignIn">
            
             <a id="heading" class="logo-title">ScriBBler</a>
             <p class="sub-heading">Explore. Imagine. Create</p>
@@ -39,10 +41,22 @@
         </div>
     </div>
 
-    <div>
+    <div id="signInModal" class ="modal" >
 
-    	<!-- Insert code for Sign In modal here -->
 
+        <!-- Insert code for Sign In modal here -->  
+        <div class="SignIn-modal-content">
+                <span id="close"> &times;</span>
+                <p class="heading">Welcome Back!</p>
+                <hr />
+                <p class="userName">UserName</p>
+                <input type="text" class="inputUserName" placeholder="Enter UserName" required/>
+                <p class="password">Password</p>
+                <input type="password" class="inputPassword" placeholder="Enter Password" required/>
+                <input type="button" value="Sign In" class="signInModal"/> 
+                <p class="modal_bottom">Not a Member?&nbsp;<a href="#" id="hyperlink">Sign Up</a></p>             
+
+        </div>     
     </div>
 
     <div id="signUpModal" class="modal">
