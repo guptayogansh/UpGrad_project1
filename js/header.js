@@ -26,6 +26,9 @@ window.onclick = function(event) {
   if (event.target == signInModal) {
     signInModal.style.display = "none";
   }
+  if(event.target == createPostModal){
+    createPostModal.style.display="none";
+  }
 }
 
 var btn1 = document.getElementById("SignIn");
@@ -48,3 +51,20 @@ link.onclick = function(){
 
 }
 
+
+var allposts = document.getElementById("allPosts");
+allposts.onclick = function(){
+     window.location = "./html/bloglist.html";
+}
+
+
+var btn2 = document.getElementById("createPosts");
+btn2.onclick = function(){
+   createPostModal.style.display = "block";
+}
+
+
+var span2 = document.getElementById("close1");
+span2.onclick = function(){
+   createPostModal.style.display="none";
+}

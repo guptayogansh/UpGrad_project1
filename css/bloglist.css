@@ -60,5 +60,14 @@ body {
 .allPostsContainer {
     height: 100%;
     width: 100%;
+}
 
+.trash{
+    float:right;
+    margin-top: 1%;
+}
+
+.moreIcon{
+    float: right;
+    margin-bottom: 1%;
 }

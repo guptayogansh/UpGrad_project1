@@ -114,18 +114,29 @@ margin: 10px 10px 0px 10px;
       
       }
 
+      .CreatePost-modal-content{
+        background-color: #fefefe;
+        margin: 1% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 30%;
+        height: 63%; /* Could be more or less, depending on screen size */
+      
+      }
+
 
       .heading{
         display: flex;
         justify-content: center;
         font-size: 30px;
         font-weight: bold;
+        color:#000;
         margin-top: 4px;
         font-family: 'Satisfy';
       }
       
       /* The Close Button */
-      .close,#close {
+      .close,#close,#close1 {
         color: #aaa;
         float: right;
         font-size: 35px;
@@ -135,7 +146,9 @@ margin: 10px 10px 0px 10px;
       .close:hover,
       .close:focus,
       #close:hover,
-      #close:focus { 
+      #close:focus,
+      #close1:hover,
+      #close1:focus { 
         color: black;
         text-decoration: none;
         cursor: pointer;
@@ -151,22 +164,36 @@ margin: 10px 10px 0px 10px;
 
       }
 
-      .fullName,.userName,.password,.confirmPassword{
+      .fullName,.userName,.password,.confirmPassword,.title,.content{
         
           font-weight: bold;
           font-size: 17px;
           font-family: 'Calibri';
           display:inline;   
+          color:#000;
       }
 
       
-      .inputFullName,.inputUserName,.inputPassword,.inputConfirmPassword{
+      .inputFullName,.inputUserName,.inputPassword,.inputConfirmPassword,.inputTitle{
           width: 95%;
           height:6%;   
           padding: 8px; 
+          color:#000;
           background:rgb(232,232,232);
           border: none;   
           margin-bottom: 20px;  
+      }
+
+
+      .contentArea{
+        width: 95%;
+        height: 25%;
+        padding: 8px;
+        border: none;
+        background:rgb(232,232,232);
+        font-family: 'Arial';
+        resize: none;
+        margin-bottom: 5%;
       }
 
       .signUpModal{
@@ -179,6 +206,7 @@ margin: 10px 10px 0px 10px;
           color: #fff;
           border:none;
           margin-top: 5px;
+          cursor:pointer;
 
 
       }
@@ -191,12 +219,14 @@ margin: 10px 10px 0px 10px;
           background: #009933;
           color: #fff;
           border:none;
+          cursor:pointer;
 
       }
 
       .modal_bottom{
         display: flex;
         justify-content:center;
+        color:#000;
         font-weight: bold;
         font-family: 'Calibri';
         font-size: 20px; 
@@ -219,3 +249,6 @@ margin: 10px 10px 0px 10px;
     a:hover {
    color: rgb(202, 19, 19);
     }
+
+
+
