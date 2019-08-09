@@ -10,13 +10,15 @@
 }
 
 #blogBody{
-   padding: 5px;
+   padding: 1%;
+   margin: 2%;
 }
 
 .blogAuthor {
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+    margin:2%;
 }
 .blogContent{
 
@@ -47,3 +49,48 @@
     cursor: pointer;
     display:none;
 }
+
+#like{
+    margin-left:3%;
+    padding: 10px 30px;
+    color:white;
+    background:#DC143C;
+    border: none;
+    box-shadow: 0 8px 6px -6px #DC143C;
+    cursor: pointer;
+}
+
+
+#commentArea{
+    margin-left:3%;
+}
+
+#counter{
+    margin-left:3%;
+}
+
+#commentBtn{
+    margin-left:3%;
+    margin-top:1%;
+   padding: 10px 30px;
+    color:white;
+    background:#DC143C;
+    border: none;
+    box-shadow: 0 8px 6px -6px #DC143C;
+    cursor: pointer;
+
+}
+
+.commentHead{
+    margin-left:3%;
+    margin-top:3%;
+}
+
+#commentContainer{
+    width:54%;
+    margin-left:3%;
+    background: #DCDCDC;
+   border:10px solid #DCDCDC;
+}
+
+  
