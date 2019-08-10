@@ -1,10 +1,10 @@
-// Get the modal
+// Getting the SignUp modal
 var modal = document.getElementById("signUpModal");
 
-// Get the button that opens the modal
+// Getting the button that opens the modal
 var btn = document.getElementById("SignUp");
 
-// Get the <span> element that closes the modal
+// Getting the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
@@ -19,6 +19,7 @@ span.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
+// whether it be SignIn modal or SignUp modal or Create Post modal 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -26,11 +27,14 @@ window.onclick = function(event) {
   if (event.target == signInModal) {
     signInModal.style.display = "none";
   }
+
   if(event.target == createPostModal){
     createPostModal.style.display="none";
   }
+  
 }
 
+//Similar to SignUp modal done above in the same js file
 var btn1 = document.getElementById("SignIn");
 btn1.onclick = function(){
    signInModal.style.display = "block";
@@ -42,8 +46,7 @@ span1.onclick = function(){
 
 }
 
-
-
+// Getting the hyperlink in SignIn modal to open sign up modal
 var link = document.getElementById("hyperlink");
 link.onclick = function(){
   signInModal.style.display="none";
@@ -52,19 +55,3 @@ link.onclick = function(){
 }
 
 
-var allposts = document.getElementById("allPosts");
-allposts.onclick = function(){
-     window.location = "./html/bloglist.html";
-}
-
-
-var btn2 = document.getElementById("createPosts");
-btn2.onclick = function(){
-   createPostModal.style.display = "block";
-}
-
-
-var span2 = document.getElementById("close1");
-span2.onclick = function(){
-   createPostModal.style.display="none";
-}

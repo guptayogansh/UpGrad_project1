@@ -1,254 +1,231 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 
+
+/* css for scribber logo */
 .logo-title{
 
-font-family: 'Satisfy', cursive;
-font-size: 50px;
-color: #112fb4;
-margin: auto;
-text-decoration: none;
-margin: 10px 10px 0px 10px;    
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  color: #112fb4;
+  margin: auto;
+  text-decoration: none;
+  margin: 10px 10px 0px 10px;    
 
 }
 
+
+/* css for the text below logo */
 .sub-heading{
-    font-family: 'Marck Script', cursive;
-    margin: 0 0 0px 10px;
-    }
+  font-family: 'Marck Script', cursive;
+  margin: 0 0 0px 10px;
+}
 
+/* styles for the header buttons */
+.signIn,.signUp {
+  width: 90px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 90%;
+  background: #0000ff;
+  color: #fff;
+  float: right;                   
+  margin: 10px 10px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    .signIn,.signUp {
-        width: 90px;
-        padding: 10px;
-        cursor: pointer;
-        font-weight: 500;
-        font-size: 90%;
-        background: #0000ff;
-        color: #fff;
-        float: right;                   
-        margin: 10px 10px 0px 0px;
-        font-family: Arial, Helvetica, sans-serif;
-       }
+/* style for the SignUp Modal */
+.modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
 
-       .postButtons{
-        display: flex;
-        justify-content: center;
-        margin-top: 160px;
-       }
-
-    #allPosts{
-        width: 90px;
-        padding:10px;
-        display: inline-block;
-        cursor: pointer;
-        font-size: 90%;
-        font-weight: bold;
-        background-color: goldenrod;
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
-      
-    }
-
-    #createPosts{
-        width: 110px;
-        padding:10px;
-        display: inline-block;
-        cursor: pointer;
-        font-size: 90%;
-        margin-left: 10px;
-        font-weight: bold;
-        color: black;
-        background-color: goldenrod;
-        font-family: Arial, Helvetica, sans-serif;
-      
-    } 
-
-
-
-    .modal{
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
-      }
-
-      #signInModal{
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
-      
-
-      }
-
-      /* Modal Content/Box */
-      .SignUp-modal-content{
-        background-color: #fefefe;
-        margin: 1% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 30%;
-        height: 80%; /* Could be more or less, depending on screen size */
-      }
-
-      .SignIn-modal-content{
-        background-color: #fefefe;
-        margin: 1% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 30%;
-        height: 63%; /* Could be more or less, depending on screen size */
-      
-      }
-
-      .CreatePost-modal-content{
-        background-color: #fefefe;
-        margin: 1% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 30%;
-        height: 63%; /* Could be more or less, depending on screen size */
-      
-      }
-
-
-      .heading{
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        font-weight: bold;
-        color:#000;
-        margin-top: 4px;
-        font-family: 'Satisfy';
-      }
-      
-      /* The Close Button */
-      .close,#close,#close1 {
-        color: #aaa;
-        float: right;
-        font-size: 35px;
-        font-weight: bold;
-      }
-      
-      .close:hover,
-      .close:focus,
-      #close:hover,
-      #close:focus,
-      #close1:hover,
-      #close1:focus { 
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-      }
-
-
-      
-      hr{
-          border-width: 0.5px;
-          border-style: solid;
-          color: gray;
-          margin-bottom: 25px;
-
-      }
-
-      .fullName,.userName,.password,.confirmPassword,.title,.content{
-        
-          font-weight: bold;
-          font-size: 17px;
-          font-family: 'Calibri';
-          display:inline;   
-          color:#000;
-      }
-
-      
-      .inputFullName,.inputUserName,.inputPassword,.inputConfirmPassword,.inputTitle{
-          width: 95%;
-          height:6%;   
-          padding: 8px; 
-          color:#000;
-          background:rgb(232,232,232);
-          border: none;   
-          margin-bottom: 20px;  
-      }
-
-
-      .contentArea{
-        width: 95%;
-        height: 25%;
-        padding: 8px;
-        border: none;
-        background:rgb(232,232,232);
-        font-family: 'Arial';
-        resize: none;
-        margin-bottom: 5%;
-      }
-
-      .signUpModal{
-          width:99%;
-          height:8%;
-          display: flex;
-          justify-content: center;
-          background: #009933;
-          padding:12px;
-          color: #fff;
-          border:none;
-          margin-top: 5px;
-          cursor:pointer;
-
-
-      }
-      
-      .signInModal{
-        width:99%;
-          height:12%;
-          display: flex;
-          justify-content: center;
-          background: #009933;
-          color: #fff;
-          border:none;
-          cursor:pointer;
-
-      }
-
-      .modal_bottom{
-        display: flex;
-        justify-content:center;
-        color:#000;
-        font-weight: bold;
-        font-family: 'Calibri';
-        font-size: 20px; 
-        margin-top: 10%;
-      }
-
-      a{
-        text-decoration: none;
-      }
-      
-     a:link {
-        color: blue;
-    }
-
-    a:visited{
-      color:blue;
-    }
-   
+/* style for the SignIn Modal*/
+#signInModal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
      
-    a:hover {
-   color: rgb(202, 19, 19);
-    }
+/* Modal Content Box for SignUp */
+.SignUp-modal-content{
+  background-color: #fefefe;
+  margin: 1% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 500px; /* Could be more or less, depending on screen size */
+}
+   
+/* Modal Content Box for SignIn */
+.SignIn-modal-content{
+
+  background-color: #fefefe;
+  margin: 1% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 400px; /* Could be more or less, depending on screen size */
+}
+
+@media screen and (max-width:1017px){
+  .SignIn-modal-content{
+    width:40%;
+  }
+
+  .SignUp-modal-content{
+    width:40%;
+  }
+}
+      
+@media screen and (max-width:500px){
+  .SignIn-modal-content{
+    width:50%;
+  }
+
+  .SignUp-modal-content{
+    width:50%;
+  }
+}
+
+/* style for the modal headings*/
+.heading{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color:#000;
+  margin-top: 4px;
+  font-family: 'Satisfy';
+}
+    
+/* The Close Button */
+.close,#close,#close1 {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+      
+.close:hover,
+.close:focus,
+#close:hover,
+#close:focus,
+#close1:hover,
+#close1:focus { 
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+     
+     
+      
+hr{
+  border-width: 0.5px;
+  border-style: solid;
+  color: gray;
+  margin-bottom: 25px;     
+}
+
+/* Modal text styles */
+.fullName,.userName,.password,.confirmPassword,.title,.content{ 
+  font-weight: bold;
+  font-size: 17px;
+  font-family: 'Calibri';
+  display:inline;   
+  color:#000;
+}
+     
+/* Modal inputs styles*/
+.inputFullName,.inputUserName,.inputPassword,.inputConfirmPassword,.inputTitle{
+  width: 95%;
+  height:6%;   
+  padding: 8px; 
+  color:#000;
+  background:rgb(232,232,232);
+  border: none;   
+  margin-bottom: 20px;  
+}
+     
+     
+.contentArea{
+  width: 95%;
+  height: 25%;
+  padding: 8px;
+  border: none;
+  background:rgb(232,232,232);
+  font-family: 'Arial';
+  resize: none;
+  margin-bottom: 5%;
+}
+ 
+/* styles for SignUp button inside Modal */
+.signUpModal{
+  width:99%;
+  height:8%;
+  display: flex;
+  justify-content: center;
+  background: #009933;
+  padding:12px;
+  color: #fff;
+  border:none;
+  margin-top: 0.5%;
+  cursor:pointer;
+}
 
 
+/* styles for SignIn button inside Modal */    
+.signInModal{
+  width:99%;
+  height:12%;
+  display: flex;
+  justify-content: center;
+  background: #009933;
+  color: #fff;
+  border:none;
+  cursor:pointer;
+}
 
+/* styles for SignUp Area in SignIn Modal */
+.modal_bottom{
+  display: flex;
+  justify-content:center;
+  color:#000;
+  font-weight: bold;
+  font-family: 'Calibri';
+  font-size: 20px; 
+  margin-top: 10%;
+}
+     
+a{
+  text-decoration: none;
+}
+      
+a:link {
+  color: blue;
+}
+ a:visited{
+  color:blue;
+}
+     
+a:hover {
+  color: rgb(202, 19, 19);
+}
+     
