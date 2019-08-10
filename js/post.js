@@ -3,7 +3,7 @@ var save = document.getElementById("save");
 var blogBody = document.getElementById("blogBody");
 edit.onclick = function(){
   edit.style.display="none";
-  save.style.display="block";
+  save.style.display="block"; // changing the state of the button here
   blogBody.style.boxShadow = "inset 0 0 5px #000";
   blogBody.contentEditable="true";
 }
@@ -16,28 +16,29 @@ save.onclick = function(){
 
 }
 
+// Ignore the commented part in the following js
 var likebtn = document.getElementById("like");
 var count=0;
 likebtn.onclick = function(){
-  if(likebtn.innerHTML == "Like")
-    {
+ // if(likebtn.innerHTML == "Like")
+   // {
      likebtn.innerHTML = "Liked!";
      count++;
      document.getElementById("counter").innerText = count + "  person likes this!";
 
-    }
-  else
-  {
+   // }
+  /*else
+   {
     likebtn.innerHTML = "Like";
-    count --;
+     count --;
     if(count==0){
-      document.getElementById("counter").innerText = "Be the first person to like this!";
+       document.getElementById("counter").innerText = "Be the first person to like this!";
     }
-    else{
-      document.getElementById("counter").innerText = count + "  person likes this!";
+     else{
+       document.getElementById("counter").innerText = count + "  person likes this!";
 
     }
-  }
+ } */
 }
 
 
@@ -55,6 +56,6 @@ commentBtn.onclick = function(){
   element.prepend(p);
   var textArea = document.getElementById("commentArea");
   if(!textArea.value || textArea.value!=textArea.defaultValue){
-   textArea.value = textArea.defaultValue;
+   textArea.value = textArea.defaultValue; // here defaultValue is giving the default values that I set for the commentArea
   }
 }
